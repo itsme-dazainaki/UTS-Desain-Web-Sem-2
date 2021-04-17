@@ -1,0 +1,352 @@
+@font-face{
+    font-family: montserrat-regular;
+    src: url(../font/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family: montserrat-bold;
+    src: url(../font/Montserrat-Bold.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: auto;
+}
+
+body::before{
+    margin: 0;
+    position: relative;
+}
+
+.navbar{
+    overflow: hidden;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.bg-navbar{
+    overflow: hidden;
+    height: 80px;
+    width: 100%;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.navbar a{
+    text-decoration: none;
+    float: right;
+    padding: 25px 30px;
+    text-align: center;
+    font-family: montserrat-regular;
+    color: honeydew;
+}
+
+.navbar a:hover{
+    color: aqua;
+}
+
+#menu_contact{
+    margin-right: 60px;
+}
+
+.navbar img{
+    width: 64px;
+    height: 64px;
+    padding: 3px 100px;
+}
+
+.banner{
+    position: static;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.banner img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 2px solid lightgray;
+    text-align: center;
+}
+
+#banner-content h3{
+    display:inline-block;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 0;
+    font-family: montserrat-bold;
+    color: rgb(211, 211, 211);
+    resize: both;
+}
+
+#banner-content p{
+    display: flex;
+    text-align: center;
+    width: fit-content;
+    margin: 30px 300px;
+    top: 0;
+    font-size: 30px;
+    font-family: montserrat-standart;
+    color: rgb(211, 211, 211);
+    resize: both;
+}
+
+.grid-container-1{
+    display: grid;
+    margin: 70px 100px 40px 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 50px 65px;
+    justify-items: stretch;
+}
+
+.grid-items-1{
+    z-index: -2;
+}
+
+.grid-items-1 h3{
+    font-family: montserrat-bold;
+    font-size: 25px;
+    text-decoration: underline aquamarine 5px;
+    text-underline-offset: 7px;
+}
+
+.grid-items-1 p{
+    font-family: montserrat-regular;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.grid-items-1 ul{
+    font-family: montserrat-regular;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.grid-items-1 hr{
+    margin-left: 0%;
+    width: 200px;
+    border: 6px solid black;
+}
+
+.grid-items-2{
+    text-align: center;
+    z-index: -2;
+}
+
+.grid-items-2 h3{
+    font-family: montserrat-bold;
+    font-size: 25px;
+    text-decoration: underline aquamarine 5px;
+    text-underline-offset: 7px;
+}
+
+.grid-items-2 p{
+    font-family: montserrat-regular;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.grid-items-2 ul{
+    font-family: montserrat-regular;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.grid-container-2{
+    display: grid;
+    margin: 70px 100px 40px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 50px 65px;
+    justify-items: stretch;
+    position: relative;
+    z-index: -1;
+}
+
+.grid-container-2 h4{
+    margin-top: 0;
+    font-family: montserrat-bold;
+    font-size: 20px;
+    text-align: center;
+    color: aquamarine;
+}
+
+button{
+    height: 50px;
+    width: 200px;
+    margin-bottom: 35px;
+    background-color: transparent;
+    color: white;
+    font-family: montserrat-bold;
+    border-radius: 25px;
+    border-color: aquamarine;
+    border-style: solid;
+}
+
+button:hover{
+    background: aquamarine;
+    color: black;
+}
+
+.grid-container-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    color: rgb(211, 211, 211);
+    font-family: montserrat-regular;
+}
+
+.grid-items-header{
+    grid-area: header;
+}
+
+#submit{
+    border-radius: 3px; 
+    height: 35px; 
+    width: 80px; 
+    background: transparent; 
+    border-color: aquamarine; 
+    color: rgb(211, 211, 211);
+    font-family: montserrat-regular;
+    float: right;
+    margin-right: 40px;
+}
+
+#submit:hover{
+    background-color: aquamarine;
+    color: black;
+}
+
+@media only screen and (max-width: 1024px){
+    .bg-navbar{
+        height: 55px;
+    }
+    .navbar{
+        height: 55px;
+    }
+    .navbar a{
+        font-size: 12px;
+        padding: 15px 12px;
+    }
+    .navbar img{
+        width: 30px;
+        height: 30px;
+        padding: 8px 7px 6px 17px;
+    }
+    #menu_contact{
+        margin-right: 45px;
+    }
+    #banner-content h1{
+        font-size: 50px;
+        margin-top: 0;
+    }
+    #banner-content p{
+        width: fit-content;
+        margin: 30px auto;
+        font-size: 30px;
+    }
+    .grid-container-1{
+        display: grid;
+        margin: 50px 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 0px;
+        justify-items: stretch;
+    }
+    
+    .grid-items-1{
+        z-index: -2;
+    }
+    
+    .grid-items-1 h3{
+        font-family: montserrat-bold;
+        font-size: 25px;
+        text-decoration: underline aquamarine 5px;
+        text-underline-offset: 7px;
+        text-align: center;
+    }
+    
+    .grid-items-1 p{
+        font-family: montserrat-regular;
+        font-size: 15px;
+        text-align: justify;
+    }
+    
+    .grid-items-2{
+        text-align: center;
+        z-index: -2;
+        
+    }
+
+    .grid-items-2 img{
+        width: 300px;
+    }
+    
+    .grid-container-2{
+        display: grid;
+        margin: 50px 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        justify-items: stretch;
+        position: relative;
+        z-index: -3;
+    }
+    
+    .grid-container-2 h4{
+        margin-top: 0;
+        font-family: montserrat-bold;
+        font-size: 20px;
+        text-align: center;
+        color: aquamarine;
+    }
+    
+    .grid-container-2 p{
+        margin-top: 0;
+        margin-bottom: 40px;
+        font-family: montserrat regular;
+        font-size: 15px;
+        text-align: center;
+        color: rgb(211, 211, 211);
+    }
+    
+    .grid-items-3, .grid-items-4, .grid-items-5{
+        width: 350px;
+    }
+    button{
+        height: 50px;
+        width: 200px;
+        margin-bottom: 35px;
+        background-color: transparent;
+        color: white;
+        font-family: montserrat-bold;
+        border-radius: 25px;
+        border-color: aquamarine;
+        border-style: solid;
+    }
+
+    .grid-container-3{
+        display: none;
+    }
+}
+
